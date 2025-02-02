@@ -1,18 +1,18 @@
 "use client";
-import "./assest/styles/Home.modul.css";
+import "./assets/styles/Home.css";
 import React, { useEffect, useState } from "react";
-import myImage from "./assest/image/ImageLandingpage.png";
-import myImage2 from "./assest/image/Property.png";
+import myImage from "./assets/image/ImageLandingpage.png";
+import myImage2 from "./assets/image/Property.png";
 import styled from "styled-components";
 import { Button, Flex, Layout } from "antd";
 import AboutPage from "./contents/About";
 import FooterPage from "./contents/FooterPage";
-import ImageGroup from "./assest/image/Group482133.png";
-import ImageCoin from "./assest/image/Mask group.png";
-import ImageStrategicBG from "./assest/image/bg-strategic.png";
-import ImageBgBR from "./assest/image/Group 1.png";
-import ImageObject from "./assest/image/OBJECTS.png";
-// import homePageVideo from "@/app/assest/video/homePageVideo.mp4";
+import ImageGroup from "./assets/image/Group482133.png";
+import ImageCoin from "./assets/image/Mask group.png";
+import ImageStrategicBG from "./assets/image/bg-strategic.png";
+import ImageBgBR from "./assets/image/Group 1.png";
+import ImageObject from "./assets/image/OBJECTS.png";
+// import homePageVideo from "@/app/assets/video/homePageVideo.mp4";
 
 const LineStyle = styled("div")`
   height: 13px;
@@ -30,6 +30,7 @@ export default function Home() {
     "FINANCIAL CONSULTING",
   ];
   const [currentWord, setCurrentWord] = useState(0);
+
 
   //----------------------------------Text-------------------------------------
   let [rightValue, setRightValue] = useState("calc(5% + 6%)");
@@ -434,8 +435,8 @@ export default function Home() {
               borderRadius: "20px",
               background: "#fffff",
               position: "relative",
-              zIndex: 1,
-              overflow: "hidden",
+              // zIndex: 1,
+              // overflow: "hidden",
             }}
           >
             <div className="content_strategic">
@@ -455,8 +456,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="title-strategic">
-                <p>Strategic Solutions</p>
+              <div className="section">
+                <div className="title-strategic">
+                  <p>Strategic Solutions</p>
+                </div>
                 <div className="des-strategic">
                   <p>
                     Our Strategic Solutions empower clients to build and enhance
@@ -467,12 +470,11 @@ export default function Home() {
                     help businesses adopt sustainable practices.
                   </p>
                 </div>
-                <div>
-                  <img src="/arrow-right.png"></img>
+                <div className="object-strategic">
+                  <img src="/arrow-right.png" ></img>
                 </div>
               </div>
             </div>
-
             <div className="bg-strategic">
               <img src={ImageStrategicBG.src} alt="Chess-table" />
             </div>
@@ -500,7 +502,7 @@ export default function Home() {
             }}
           >
             <div className="content_business">
-              <div style={{ display: "flex", justifyContent: "space-between" ,gap:"60px"}}>
+              <div style={{ display: "flex", justifyContent: "space-between", gap: "60px" }}>
                 <div className="title-business">
                   <p>Business
                     <br />
@@ -518,17 +520,17 @@ export default function Home() {
                 </div>
               </div>
               <div className="services_business">
-                  <div className="service-item-business">
-                    <Button>ESG consulting</Button>
-                    <Button>SDG consulting</Button>
-                    <Button>Digital Transformation</Button>
-                  </div>
+                <div className="service-item-business">
+                  <Button>ESG consulting</Button>
+                  <Button>SDG consulting</Button>
+                  <Button>Digital Transformation</Button>
                 </div>
-                <div style={{display:"flex",justifyContent:"center",marginRight:"5px"}}>
-                  <img src={ImageObject.src} alt="BGBr"></img></div>
+              </div>
+              <div style={{ display: "flex", justifyContent: "center", marginRight: "5px" }}>
+                <img src={ImageObject.src} alt="BGBr"></img></div>
               <div>
-                  <img src="/arrow-right.png" ></img>
-                </div>
+                <img src="/arrow-right.png" ></img>
+              </div>
             </div>
 
             <div className="bg-business">

@@ -1,6 +1,6 @@
 'use client'
 import { Carousel } from "antd"
-import "../../assest/styles/BusinessReorientation.css"
+import "../../assets/styles/BusinessReorientation.css"
 import React from 'react'
 
 export default function BusinessReorientationPage() {
@@ -32,7 +32,7 @@ export default function BusinessReorientationPage() {
                 </div>
 
                 <div className="section03-contrainer">
-                    <Carousel arrows >
+                    <Carousel arrows autoplay draggable arrowSize={50}>
                         {/* slide-1 */}
                         <div className="slide-1">
                             <div className="title-1">

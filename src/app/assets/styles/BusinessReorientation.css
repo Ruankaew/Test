@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#strategicSolutions {
+#businessReorientation {
     position: relative;
     background-color: rgba(248, 246, 241, 0.7);
     margin-top: 90px;
@@ -18,31 +18,15 @@
     /* height: 100%; */
 }
 
-#strategicSolutions .header-contrainer {
+#businessReorientation .header-contrainer {
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     /* border: 1px solid #E0E0E0; */
+
 }
 
-.header-contrainer {
-    position: relative; /* กำหนดให้เป็นจุดอ้างอิง */
-    z-index: 1; /* กำหนดลำดับการแสดงผล */
-  }
-  
-  .header-object {
-    position: absolute; /* ทำให้ซ้อนทับ */
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%); /* จัดให้อยู่ตรงกลาง */
-    z-index: 2; /* สูงกว่า header-contrainer */
-  }
-  
-  .section01-contrainer {
-    position: relative; /* ป้องกันไม่ให้ทับกันผิดพลาด */
-    z-index: 1; /* กำหนดให้ต่ำกว่า header-object */
-  }
-#strategicSolutions .header-contrainer img {
+#businessReorientation .header-contrainer img {
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -58,8 +42,9 @@
     font-size: 96px;
     color: white;
 }
+
 .section01-contrainer {
-    height: 740px;
+    height: 620px;
     border-radius: 20px;
     overflow: hidden;
     /* border: 1px solid #E0E0E0; */
@@ -86,16 +71,16 @@
     background-color: white;
     font-weight: 100;
 }
+
 .description .des-2 {
-    width: 1048px;
-    height: 540px;
+    width: 1200px;
+    height: 420px;
     text-align: start;
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 56px;
     line-height: 60px;
     color: #454545;
-    margin-left: 10%;
 }
 
 .section02-contrainer {
@@ -132,17 +117,13 @@
     border: 1px solid #E0E0E0;
     /* margin-top: 16px; */
 }
+
 .slide-1 {
     height: 860px;
     position: relative;
     z-index: 1;
     overflow: hidden;
 
-}
-.bg-slide-1 img {
-    width: 100%;
-    height: 860px;
-    object-fit: cover;
 }
 
 .slide-1 .title-1 {
@@ -151,25 +132,30 @@
     font-size: 96px;
     color: white;
     /* top: 10%; */
-    left: 40%;
+    left: 5%;
 }
+
 .title-1 .col-1 {
     width: 50%;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
-
+/* .title-1 .col-1 img{
+    margin-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+} */
 .title-1 .col-1 {
     width: 647px;
     height: 166px;
-    left: 80%;
+    left: 5%;
     justify-content: center;
     align-items: center;
 }
 
 .title-col-1 p{
-    width: 730px;
+    width: 647px;
     font-family: "Kudryashev Headline";
     font-weight: 400;
     font-size: 96px;
@@ -180,7 +166,7 @@
 }
 
 .content-col-1 p{
-    width:720px;
+    width:700px;
     font-family: "DM Sans";
     font-weight: 200;
     font-size: 24px;
@@ -189,6 +175,30 @@
     margin-bottom: 5%;
     margin-left: 10%;
 }
+
+.title-1 .col-2 {
+    /* justify-self: end; */
+    
+    width: 763px;
+    height: 474px;
+    top: 50%;
+}
+
+.title-1 .col-2 img{
+    width: 763px;
+    height: 474px;
+    margin-top: 30%;
+    margin-left: 20%;
+}
+
+
+
+.bg-slide-1 img {
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+}
+
 .slide-2 {
     height: 860px;
     position: relative;
@@ -206,31 +216,36 @@
 .title-2 .col-1 {
     width: 100%;
     height: auto;
-    /* justify-content: end;
-    align-items: end; */
-    /* margin-left: 0%; */
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* margin-left: 90%; */
 }
 
 
+.title-2 .col-1 img{
+    margin-left: 0%;
+
+}
+
 .title-2 .col-1 .title-col-1 p{
-    width: 860px;
+    width: 811px;
     font-family: "Kudryashev Headline";
     font-weight: 400;
     font-size: 96px;
     line-height: 83px;
     color: white;
     margin-bottom: 5%;
-    /* margin-left: 100%; */
+    margin-left: 100%;
 }
 
 .title-2 .col-1 .content-col-1 p{
-    width: 800px;
+    width: 700px;
     font-family: "DM Sans";
     font-weight: 200;
     font-size: 24px;
     line-height: 26px;
     color: white;
-    /* margin-left: 100%; */
+    margin-left: 100%;
 
 }
 
@@ -239,8 +254,10 @@
     width: 647px;
 }
 
+
+
 .bg-slide-2 img {
-    /* width: 1376px; */
+    width: 100%;
     height: 860px;
     object-fit: cover;
     
@@ -248,106 +265,73 @@
 .bg-slide-3 img {
     width: 100%;
     height: 860px;
-    object-fit: cover;
+    object-fit: fill;
 }
-.slide-3 {
+
+.ant-carousel .slick-slide {
     height: 860px;
     position: relative;
-    /* z-index: 1; */
-    overflow: hidden;
-
-}
-
-.slide-3 .title-3 {
     display: flex;
-    position: absolute;
-    top: 10%;
-}
-
-.title-3 .col-3 {
-    width: 100%;
-    height: auto;
-    justify-self: end;
-    margin-left: 80%;
-}
-
-
-.title-3 .col-3 .title-col-3 p{
-    width: 860px;
-    font-family: "Kudryashev Headline";
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 83px;
+    justify-content: center;
+    align-items: center;
+    /* background: #793665; */
     color: white;
-    margin-bottom: 5%;
-    /* margin-left: 100%; */
+    border-radius: 20px;
 }
 
-.title-3 .col-3 .content-col-3 p{
-    width: 820px;
-    font-family: "DM Sans";
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 26px;
-    color: white;
-    /* margin-left: 100%; */
-
+/* ปรับลูกศรซ้าย */
+/* ปรับลูกศรซ้าย */
+.ant-carousel .slick-prev {
+    font-size: 56px !important;
+    transform: scale(1.5) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: rgba(207, 152, 44, 1) !important;
+    z-index: 2 !important;
+    left: -20px !important;
 }
 
-.title-3 .col-3 .img-col-3 img{
-    width: 647px;
-}
-
-.bg-slide-4 img {
-    width: 100%;
-    height: 860px;
-    object-fit: cover;
-}
-.slide-4 {
-    height: 860px;
-    position: relative;
-    /* z-index: 1; */
-    overflow: hidden;
-
-}
-
-.slide-4 .title-4 {
-    display: flex;
-    position: absolute;
-    top: 10%;
-}
-
-.title-4 .col-4 {
-    width: 100%;
-    height: auto;
-    justify-self: end;
-    margin-left: 10%;
+/* ปรับลูกศรขวา */
+.ant-carousel .slick-next {
+    font-size: 56px !important;
+    transform: scale(1.5) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: rgba(207, 152, 44, 1) !important;
+    z-index: 2 !important;
+    right: -20px !important;
 }
 
 
-.title-4 .col-4 .title-col-4 p{
-    width: 860px;
-    font-family: "Kudryashev Headline";
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 83px;
-    color: white;
-    margin-bottom: 5%;
-    /* margin-left: 100%; */
+/* ปรับระยะห่างจากขอบของ Carousel */
+.ant-carousel .slick-prev {
+    left: 20px !important;
 }
 
-.title-4 .col-4 .content-col-4 p{
-    width: 520px;
-    font-family: "DM Sans";
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 26px;
-    color: white;
-    /* margin-left: 100%; */
-
+.ant-carousel .slick-next {
+    right: 20px !important;
 }
 
-.title-4 .col-4 .img-col-4 img{
-    width: 647px;
+/* ปรับสีเมื่อ hover */
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+    /* background: rgba(255, 255, 255, 0.7) !important; */
+    color: rgba(207, 152, 44, 1) !important;
+}
+/* สีของ dots เมื่อไม่ถูกเลือก */
+.ant-carousel .slick-dots li button {
+    background-color: rgba(207, 152, 44, 1) !important;
+    width: 20px !important;
+    height: 4px !important;
+    border-radius: 0 !important;
 }
 
+/* สีของ dots เมื่อถูกเลือก */
+.ant-carousel .slick-dots li button {
+    background-color: rgba(207, 152, 44, 1) !important;
+    width: 20px !important;
+    height: 4px !important;
+    border-radius: 0 !important;
+}

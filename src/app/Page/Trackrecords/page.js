@@ -1,6 +1,6 @@
 'use client'
 import { Carousel } from "antd"
-import "../../assest/styles/Trackrecords.css"
+import "../../assets/styles/Trackrecords.css"
 import React from 'react'
 // import ImageBG from "../../assest/image/Trackercords.png"
 
@@ -21,7 +21,7 @@ export default function TrackrecordsPage() {
                 </div>
                 <div className="section02-contrainer">
                     
-                        <Carousel arrows autoplay >
+                        <Carousel arrows autoplay draggable arrowSize={50} >
                             <div className="slide-1">
                                 <img src="/TR-Logo-slide1.png" alt="slide-1"/>
                             </div>

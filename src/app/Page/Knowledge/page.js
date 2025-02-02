@@ -1,10 +1,18 @@
-'use client'
+"use client";
 import { Carousel } from "antd"
-import "../../assest/styles/Knowledge.css"
+import "../../assets/styles/Knowledge.css"
 import React from 'react'
+import { useEffect, useState } from "react";
 
 
 export default function KnowledgeSharingPage() {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    if (!isClient) return null; // หรือ loading screen
     return (
         <div id="knowledge">
             <div className='contrianer'>
@@ -32,7 +40,7 @@ export default function KnowledgeSharingPage() {
 
                 <div className="section03-contrainer">
 
-                    <Carousel arrows autoplay>
+                    <Carousel arrows autoplay draggable arrowSize={50}>
                         {/* slide-1 */}
                         <div className="slide-1">
                             <div className="title-1">
@@ -76,8 +84,8 @@ export default function KnowledgeSharingPage() {
 
                                     </div>
                                     <div className="img-col-1">
-                                        <img src="/ks-girl2.png" style={{width: "513px", height: "300px"}}/>
-                                        <img className="img-man" src="/ks-man.png"  style={{width: "630px", height: "428px"}}/>
+                                        <img src="/ks-girl2.png" style={{ width: "513px", height: "300px" }} />
+                                        <img className="img-man" src="/ks-man.png" style={{ width: "630px", height: "428px" }} />
                                     </div>
                                 </div>
                             </div>

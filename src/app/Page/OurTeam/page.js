@@ -1,6 +1,6 @@
 'use client'
 import { Carousel } from "antd"
-import "../../assest/styles/Knowledge.css"
+import "../../assets/styles/Knowledge.css"
 import React from 'react'
 
 export default function OurTeamPage() {

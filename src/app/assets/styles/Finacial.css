@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#finacialSolutions {
+    position: relative;
+    background-color: rgba(248, 246, 241, 0.7);
+    margin-top: 90px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.contrianer {
+    position: relative;
+    width: 100%;
+}
+
+#finacialSolutions .header-contrainer {
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.header-contrainer {
+    position: relative; 
+    z-index: 1;
+  }
+  
+  .header-object {
+    position: absolute; /* ทำให้ซ้อนทับ */
+    width: 500px;
+    top: 24%;
+    left: 70%;
+    transform: translateX(-50%); /* จัดให้อยู่ตรงกลาง */
+    z-index: 2; /* สูงกว่า header-contrainer */
+  }
+
+  .header-object img{
+    width: 500px;
+  }
+  
+  .section01-contrainer {
+    position: relative; /* ป้องกันไม่ให้ทับกันผิดพลาด */
+    z-index: 1; /* กำหนดให้ต่ำกว่า header-object */
+  }
+
+#finacialSolutions .header-contrainer img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.header-contrainer .title {
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    position: absolute;
+    margin-top: 10%;
+    left: 5%;
+    z-index: 1;
+    font-size: 96px;
+    color: white;
+}
+.section01-contrainer {
+    height: 620px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 1px solid #E0E0E0; */
+    margin-top: 5%;
+}
+.section01-contrainer .description {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.description .des-1 {
+    width: 10%;
+}
+
+.description .des-1 button {
+    width: 124px;
+    height: 44px;
+    border: 1px dotted rgba(207, 152, 44, 1);
+    border-radius: 42px;
+    font-family: "DM Sans", sans-serif;
+    background-color: white;
+    font-weight: 100;
+}
+.description .des-2 {
+    width: 1200px;
+    height: 540px;
+    text-align: start;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 60px;
+    color: #454545;
+    margin-left: 5%;
+}
+.section02-contrainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    gap: 15px;
+    padding-bottom: 0;
+}
+
+.divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #c5c7c6;
+}
+
+.divider-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section03-contrainer {
+    height: 860px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #E0E0E0;
+    margin-top: 16px;
+}
+.slide-1 {
+    height: 860px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.slide-1 .title-1 {
+    position: absolute;
+    color: white;
+    left: 5%;
+    display: inline;
+}
+.title-1 .col-1 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.title-col-1 p{
+    width: 1200px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    /* margin-bottom: 5%; */
+    margin-left: 10%;
+}
+
+.title-1 .col-2 {
+    width: 1500px;
+    height: 474px;
+}
+
+.col-2 .content-col-1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .col-2 .content-col-1 img{
+    margin: 0;
+    justify-content: center;
+}
+
+
+.col-2 .content-col-1 p{
+    width: 600px;
+    height: 260px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+.bg-slide-1 img {
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+}
+
+.slide-2 {
+    height: 860px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+}
+.slide-2 .title-2 {
+    display: flex;
+    width: 100%;
+    margin-right: 20%;
+
+}
+
+.col-2-1 {
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.title-2 .col-2-1 .title-col2-1 p{
+    width: 700px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.title-2 .col-2-1 .content-col2-1 p{
+    width: 700px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.img-col-1 {
+    display: flex;
+    justify-content: center; /* จัดเรียงจากซ้ายไปขวา */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง (ถ้าจำเป็น) */
+    gap: 15%; /* ระยะห่างระหว่างรูป (ถ้าต้องการ) */
+    /* width: 100%; */
+    /* margin-right: 10%; */
+
+  }
+  
+.bg-slide-2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+    z-index: -1; /* ทำให้เป็นพื้นหลัง */
+    
+}
+
+
+.slide-3 {
+    height: 860px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.bg-slide-3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+    z-index: -1; /* ทำให้เป็นพื้นหลัง */
+}
+
+.title-3 {
+    /* display: flex; */
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    gap: 10%;
+
+}
+
+.col-3-1 {
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 0%;
+}
+
+.title-col-3-1 p{
+    width: 940px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.content-col-3-1 p{
+    width: 720px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.slide-4 {
+    height: 860px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.bg-slide-4 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+    z-index: -1; /* ทำให้เป็นพื้นหลัง */
+}
+
+.title-4 {
+    /* display: flex; */
+    width: max-content;
+    margin-top: 5%;
+    margin-left: auto;
+    gap: 10%;
+    
+}
+
+.col-4-1 {
+    /* width: 100%; */
+    height: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    padding-right: 10%;
+
+
+}
+
+.title-col-4-1 p{
+    width: 940px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+}
+
+.content-col-4-1 p{
+    width: 720px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 2%;
+}
+.slide-5 {
+    height: 860px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.bg-slide-5 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+    z-index: -1; /* ทำให้เป็นพื้นหลัง */
+}
+
+.title-5 {
+    /* display: flex; */
+    width: max-content;
+    margin-top: 5%;
+    margin-left: 10%;
+    gap: 10%;
+    
+}
+
+.col-5-1 {
+    /* width: 100%; */
+    height: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    padding-right: 10%;
+
+
+}
+
+.title-col-5-1 p{
+    width: 900px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+}
+
+.content-col-5-1 p{
+    width: 540px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.col-5-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    /* margin-left: 10%; */
+}
+
+.img-sd5 {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.slide-6 {
+    height: 860px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bg-slide-6 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+    z-index: -1; /* ทำให้เป็นพื้นหลัง */
+}
+
+.title-6 {
+    /* display: flex; */
+    width: max-content;
+    margin-top: 5%;
+    margin-left: 30%;
+    gap: 10%;
+    justify-content: center;  /* ถ้าต้องการให้เนื้อหาภายใน title-6 อยู่กลาง */
+   
+    
+}
+
+.col-6-1 {
+    /* width: 100%; */
+    height: auto;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    padding-right: 10%;
+
+
+}
+
+.title-col-6-1 p{
+    width: 930px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    /* margin-right: 10%; */
+    
+}
+
+.content-col-6-1 p{
+    width: 700px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin: 5% 20%;
+    margin-bottom: 2%;
+}
+.slide-7 {
+    height: 860px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.bg-slide-7 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+    z-index: -1; /* ทำให้เป็นพื้นหลัง */
+}
+
+.title-7 {
+    /* display: flex; */
+    width: max-content;
+    margin-top: 5%;
+    margin-left: 10%;
+    gap: 10%;
+    
+}
+
+.col-7-1 {
+    /* width: 100%; */
+    height: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    padding-right: 10%;
+
+
+}
+
+.title-col-7-1 p{
+    width: 720px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 10%;
+
+}
+
+.content-col-7-1 p{
+    width: 940px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.col-7-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    /* margin-left: 10%; */
+}
+
+.img-sd7 {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.col-7-3 {
+    display: flex;  /* ใช้ Flexbox */
+    justify-content: space-between;  /* จัดภาพให้ห่างกัน */
+    align-items: center;  /* จัดให้ภาพอยู่ในแนวตั้งเดียวกัน */
+    margin-top: 5%;
+    width: 100%;  /* กำหนดให้มีความกว้าง 100% */
+    gap: 10%;  /* ระยะห่างระหว่างภาพ */
+}
+
+.content-col-7-3 {
+    display: flex;  /* ใช้ Flexbox ภายใน container ของภาพ */
+    justify-content: space-between; /* จัดภาพให้ห่างกัน */
+    width: 100%;  /* ให้คอนเทนเนอร์ของภาพมีความกว้าง 100% */
+    gap: 10%;  /* ระยะห่างระหว่างภาพ */
+}
+
+
+
+.ant-carousel .slick-slide {
+    height: 860px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #793665; */
+    color: white;
+    border-radius: 20px;
+}
+
+/* ปรับลูกศรซ้าย */
+/* ปรับลูกศรซ้าย */
+.ant-carousel .slick-prev {
+    font-size: 56px !important;
+    transform: scale(1.5) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: rgba(207, 152, 44, 1) !important;
+    z-index: 2 !important;
+    left: -20px !important;
+}
+
+/* ปรับลูกศรขวา */
+.ant-carousel .slick-next {
+    font-size: 56px !important;
+    transform: scale(1.5) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: rgba(207, 152, 44, 1) !important;
+    z-index: 2 !important;
+    right: -20px !important;
+}
+
+
+/* ปรับระยะห่างจากขอบของ Carousel */
+.ant-carousel .slick-prev {
+    left: 20px !important;
+}
+
+.ant-carousel .slick-next {
+    right: 20px !important;
+}
+
+/* ปรับสีเมื่อ hover */
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+    /* background: rgba(255, 255, 255, 0.7) !important; */
+    color: rgba(207, 152, 44, 1) !important;
+}
+/* สีของ dots เมื่อไม่ถูกเลือก */
+.ant-carousel .slick-dots li button {
+    background-color: rgba(207, 152, 44, 1) !important;
+    width: 20px !important;
+    height: 4px !important;
+    border-radius: 0 !important;
+}
+
+/* สีของ dots เมื่อถูกเลือก */
+.ant-carousel .slick-dots li button {
+    background-color: rgba(207, 152, 44, 1) !important;
+    width: 20px !important;
+    height: 4px !important;
+    border-radius: 0 !important;
+}
