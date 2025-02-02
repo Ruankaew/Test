@@ -1,8 +1,8 @@
 'use client'
-import "../../assest/styles/Cantact.modul.css"
+import "../../assets/styles/Contact.css"
 import React, { useEffect, useRef } from "react";
 import { Input, Col, Row, Form, Button } from "antd";
-import Image from '../../assest/image/Heros V4.png';
+import Image from '../../assets/image/Heros V4.png';
 
 export default function ContactPage() {
     const mapRef = useRef(null);

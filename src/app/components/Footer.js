@@ -3,8 +3,8 @@ import { Layout, Menu } from 'antd';
 import React from 'react'
 import styled from 'styled-components';
 import { RightOutlined } from '@ant-design/icons';
-import Image_logo from "../assest/image/GroupLogo.png"
-import "../assest/styles/Footer.css"
+import Image_logo from "../assets/image/GroupLogo.png"
+import "../assets/styles/Footer.css"
 
 const StyledMenu = styled(Menu)`
   .ant-menu-item {

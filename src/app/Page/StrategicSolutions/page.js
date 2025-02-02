@@ -1,6 +1,6 @@
 'use client'
 import { Carousel } from "antd"
-import "../../assest/styles/Strategic.css"
+import "../../assets/styles/Strategic.css"
 import React from 'react'
 
 export default function StrategicSolutionsPage() {
@@ -42,7 +42,7 @@ export default function StrategicSolutionsPage() {
                            </div>
            
                            <div className="section03-contrainer">
-                               <Carousel arrows autoplay>
+                               <Carousel arrows autoplay draggable arrowSize={50}>
                                    {/* slide-1 */}
                                    <div className="slide-1">
                                        <div className="title-1">

@@ -1,14 +1,12 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import "../assest/styles/Header.modul.css";
+import "../assets/styles/Header.css";
 import { Button, ConfigProvider, Layout, Menu, Drawer } from 'antd';
 import { ArrowRightOutlined, DownOutlined, MenuOutlined, RightOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/navigation';
 
 import styled from 'styled-components';
-import Image_logo from "../assest/image/GroupLogo.png"
-import Link from 'next/link';
-import KnowledgeSharingPage from '../Page/Knowledge/page';
+import Image_logo from "../assets/image/GroupLogo.png"
 
 const StyledMenu = styled(Menu)`
   .ant-menu-item {
@@ -41,7 +39,7 @@ const StyledMenu = styled(Menu)`
   .ant-menu-item-selected::after,
   .ant-menu-submenu-active .ant-menu-title::after,
   .ant-menu-submenu-selected .ant-menu-title::after {
-    border-bottom-color: transparent !important;
+    border-bottom-color:  transparent !important;
   }
 
   .ant-menu-submenu .ant-menu-item:hover {
@@ -55,6 +53,7 @@ const StyledMenu = styled(Menu)`
 `;
 
 
+
 export default function Header() {
   const router = useRouter();
   const { Header } = Layout;
@@ -64,95 +63,38 @@ export default function Header() {
   const [openSubMenu, setOpenSubMenu] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
+  // 
+  
   const items = [
+    { label: 'Home', key: 'home', path: '/' },
+    { label: 'Track Records', key: 'trackrecord', path: '/Page/Trackrecords' },
+    { label: 'Our Team', key: 'ourteam', path: '/Page/OurTeam' },
+    { label: 'Business Reorientation', key: 'businessRT', path: '/Page/BusinessReorientation' },
+    { label: 'Financial Solutions', key: 'finacialSolutions', path: '/Page/FinacialSolutions' },
+    { label: 'Strategic Solutions', key: 'strategicSolutions', path: '/Page/StrategicSolutions' },
+    { label: 'Contact Us', key: 'contactus', path: '/Page/Contactus' },
+    { label: 'Knowledge', key: 'knowledge', path: '/Page/Knowledge' },
+    { key: 'getintouch', path: '/Page/Contactus' },
     {
       label: (
         <>
-          Home
+          Service {modeMobile ? '' : openSubMenu ? <DownOutlined style={{ fontSize: '10px' }} /> : <RightOutlined style={{ fontSize: '10px' }} />}
         </>
       ),
-      key: 'home',
-      path: '/'
-    },
-    
-    {
-      label: (
-        <>
-          Track Records
-        </>
-      ),
-      key: 'trackrecord',
-      path: '/Page/Trackrecords'
-    },
-    {
-      label: (
-        <>
-          Our Team
-        </>
-      ),
-      key: 'ourteam',
-      path: '/Page/OurTeam'
-    },
-    {
-      label: (
-        <>
-          BusinessReorientation
-        </>
-      ),
-      key: 'businessRT',
-      path: '/Page/BusinessReorientation'
-    },
-    {
-      label: (
-        <>
-          FinacialSolutions
-        </>
-      ),
-      key: 'finacialSolutions',
-      path: '/Page/FinacialSolutions'
-    },
-    {
-      label: (
-        <>
-          StrategicSolutions
-        </>
-      ),
-      key: 'strategicSolutions',
-      path: '/Page/StrategicSolutions'
-    },
-    {
-      label: (
-        <>
-          Contact us
-        </>
-      ),
-      key: 'contactus',
-      path: '/Page/Contactus'
-    },
-    {
-      label: (
-        <>
-          Knowledge
-        </>
-      ),
-      key: 'knowledge',
-      path: '/Page/Knowledge'
-    },
-    {
-      key: 'getintouch',
-      path: '/Page/Contactus'
+      key: 'service',
+      children: [
+        { label: 'Knowledge', key: 'knowledge' },
+        { label: 'Our Team', key: 'ourteam' },
+        { label: 'Business Reorientation', key: 'businessRT' },
+        { label: 'Strategic Solutions', key: 'strategicSolutions' },
+        { label: 'Financial Solutions', key: 'finacialSolutions' },
+      ],
     },
   ];
+  
 
   const onClick = (e) => {
     const clickedItem = items.find(item => item.key === e.key);
-    // const element = document.getElementById(e.key);
-    // if (element) {
-    //   window.scrollTo({
-    //     top: element.offsetTop - 100,
-    //     behavior: 'smooth',
-    //   });
-    // };
     if (clickedItem?.path) {
       router.push(clickedItem.path);
       sessionStorage.setItem('active_nav', e.key)
@@ -200,7 +142,7 @@ export default function Header() {
         theme={{
           token: {
             colorPrimary: '#1890ff',
-            colorBgBase: 'white',
+            // colorBgBase: 'white',
             colorText: '#000000',
             colorLink: '#1890ff',
           }
@@ -218,13 +160,14 @@ export default function Header() {
             <div></div>
             <div></div>
             <Menu
-              theme="light"
+              // theme="light"
               mode="horizontal"
               onClick={onClick}
               onOpenChange={onOpenChange}
               className="custom-menu"
               selectedKeys={[current]}
               style={{
+                
                 flex: 1,
                 fontSize: "16px",
                 minWidth: 0,
@@ -237,11 +180,11 @@ export default function Header() {
                 padding: 0,
               }}
             >
-              <Menu.Item key="home">
+              <Menu.Item theme="light" key="home">
                 Home
               </Menu.Item>
 
-              <Menu.SubMenu
+              <Menu.SubMenu 
                 key="service"
                 title={(
                   <>
@@ -249,8 +192,8 @@ export default function Header() {
                   </>
                 )}
               >
-                <Menu.Item key="knowledge" selectedKeys={[current]}>knowledge</Menu.Item>
-                <Menu.Item key="ourteam"selectedKeys={[current]}>Our Team</Menu.Item>
+                <Menu.Item key="knowledge" selectedKeys={[current]}>Knowledge Sharing</Menu.Item>
+                {/* <Menu.Item key="ourteam"selectedKeys={[current]}>Our Team</Menu.Item> */}
                 <Menu.Item key="businessRT"selectedKeys={[current]}>Business Reorientation</Menu.Item>
                 <Menu.Item key="strategicSolutions"selectedKeys={[current]}>Strategic Solutions</Menu.Item>
                 <Menu.Item key="finacialSolutions"selectedKeys={[current]}>Finacial Solutions</Menu.Item>
@@ -264,9 +207,9 @@ export default function Header() {
                 ourTeam
               </Menu.Item> */}
 
-              <Menu.Item key="contactus">
+              {/* <Menu.Item key="contactus">
                 Contact us
-              </Menu.Item>
+              </Menu.Item> */}
               <Menu.Item key="getintouch">
                 <Button
                   style={{
@@ -286,31 +229,6 @@ export default function Header() {
                 </Button>
               </Menu.Item>
             </Menu>
-
-
-            {/* <StyledMenu
-              theme='light'
-              mode="horizontal"
-              onClick={(e) => {
-                onClick(e);
-              }}
-              onOpenChange={onOpenChange}
-              className="custom-menu"
-              selectedKeys={[current]}
-              items={items}
-              style={{
-                flex: 1,
-                fontSize: "16px",
-                minWidth: 0,
-                maxWidth: "900px",
-                backgroundColor: "transparent",
-                border: "none",
-                display: modeMobile ? "none" : "flex",
-                fontWeight: 400,
-                justifyContent: "space-around",
-                padding: 0,
-              }}
-            /> */}
 
             {modeMobile && (
               <>

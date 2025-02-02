@@ -10,6 +10,7 @@ const nextConfig = {
                     options: {
                         name: '[name].[hash].[ext]',
                         outputPath: 'assets/videos/', // ตั้งที่อยู่ที่จะบันทึกไฟล์
+                        publicPath: '/_next/static/assets/videos/',
                     },
                 },
             ],

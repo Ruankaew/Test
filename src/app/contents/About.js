@@ -1,6 +1,6 @@
 import React from "react";
-import "../assest/styles/About.css";
-// import ImageArrow from "../assest/image/Component 18.png"
+import "../assets/styles/About.css";
+// import ImageArrow from "../assets/image/Component 18.png"
 
 export default function AboutPage() {
   return (
