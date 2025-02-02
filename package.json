@@ -1,0 +1,26 @@
+{
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "./deploy.sh"
+  },
+  "dependencies": {
+    "antd": "^5.22.1",
+    "bootstrap": "^5.3.3",
+    "next": "^15.1.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.13",
+    "swr": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.0.3",
+    "file-loader": "^6.2.0"
+  }
+}
