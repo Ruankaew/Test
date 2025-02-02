@@ -74,7 +74,7 @@ export default function Header() {
     { label: 'Strategic Solutions', key: 'strategicSolutions', path: '/Page/StrategicSolutions' },
     { label: 'Contact Us', key: 'contactus', path: '/Page/Contactus' },
     { label: 'Knowledge', key: 'knowledge', path: '/Page/Knowledge' },
-    { key: 'getintouch', path: '' },
+    { key: 'getintouch'},
     {
       label: (
         <>
